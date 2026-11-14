@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iqbal Keemali Alpan — Mobile Developer</title>
+<meta name="description" content="Iqbal Keemali Alpan — Mobile Developer Flutter & IoT dari Bondowoso.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0a0a0f; --card: #14141d; --card2: #1a1a26;
+    --text: #f2f2f7; --muted: #9a9aad; --line: #262633;
+    --green: #22c55e; --lime: #a3e635; --purple: #a78bfa;
+  }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(10,10,15,.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  .logo { font-weight: 800; font-size: 18px; }
+  .logo span { color: var(--lime); }
+  nav ul { display: flex; gap: 22px; list-style: none; font-size: 14px; color: var(--muted); }
+  nav ul a:hover { color: var(--text); }
+  @media (max-width: 600px) { nav ul { display: none; } }
+
+  header { padding: 72px 0 48px; }
+  .badge { display: inline-block; font-size: 13px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); margin-bottom: 20px; }
+  .badge i { display: inline-block; width: 8px; height: 8px; background: var(--green); border-radius: 50%; margin-right: 7px; }
+  h1 { font-size: clamp(38px, 7vw, 60px); line-height: 1.05; letter-spacing: -1.5px; }
+  h1 em { font-style: normal; background: linear-gradient(90deg, var(--lime), var(--green)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .subtitle { margin-top: 16px; font-size: 18px; color: var(--muted); max-width: 640px; }
+  .btns { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+  .btn { padding: 12px 20px; border-radius: 12px; font-weight: 600; font-size: 15px; border: 1px solid var(--line); background: var(--card); }
+  .btn.primary { background: var(--lime); color: #111; border-color: var(--lime); }
+  .btn:hover { transform: translateY(-1px); }
+
+  section { padding: 36px 0; }
+  h2 { font-size: 24px; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .sec-desc { color: var(--muted); margin-bottom: 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  .grid .card h3 { font-size: 17px; margin-bottom: 6px; }
+  .grid .card p { color: var(--muted); font-size: 15px; }
+  .tag { display: inline-block; font-size: 12px; padding: 4px 9px; border-radius: 999px; background: var(--card2); border: 1px solid var(--line); color: var(--muted); margin: 4px 4px 0 0; }
+  .project h3 { font-size: 18px; }
+  .project p { color: var(--muted); font-size: 15px; margin: 6px 0 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font-size: 13px; padding: 6px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--text); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">iqbal<span>.</span></a>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#hobi">Hobi</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header>
+    <span class="badge"><i></i>Available untuk magang / freelance</span>
+    <h1>Hai, aku Iqbal.<br>Aku bikin aplikasi <em>yang nyambung ke dunia nyata.</em></h1>
+    <p class="subtitle">Mobile Developer — Flutter & IoT. Mahasiswa di Bondowoso yang suka bangun aplikasi dari nol sampai jalan di HP dan di hardware beneran.</p>
+    <div class="btns">
+      <a class="btn primary" href="#proyek">Lihat Proyek ↓</a>
+      <a class="btn" href="https://github.com/panbotsjsj" target="_blank">GitHub ↗</a>
+    </div>
+  </header>
+
+  <section id="tentang">
+    <h2>Tentang Aku</h2>
+    <p class="sec-desc">Versi singkat, tanpa formal-formal.</p>
+    <div class="card">
+      <p>Aku Iqbal Keemali Alpan, mahasiswa Politeknik Negeri Jember, Bondowoso. Fokusku di <b>Flutter</b> — dari desain Figma, sampai aplikasi yang bisa motret daun, kirim ke server AI, dan nampilin data sensor secara realtime.</p>
+      <p style="margin-top:12px; color:var(--muted)">Aku paling semangat kalau proyeknya end-to-end: aplikasi + backend + alat IoT-nya. Kalau cuma UI doang, rasanya kurang greget. Di luar itu, aku orangnya santai, suka belajar sambil praktek langsung, dan nggak takut ngoprek sampai error berkali-kali.</p>
+      <div style="margin-top:16px">
+        <span class="tag">📍 Bondowoso, Jawa Timur</span>
+        <span class="tag">📱 Flutter & Dart</span>
+        <span class="tag">🌡️ ESP32 / ESP8266</span>
+        <span class="tag">🔥 Firebase</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobi">
+    <h2>Di Luar Ngoding</h2>
+    <p class="sec-desc">Hal-hal yang bikin aku betah di depan laptop (dan kadang jauh dari laptop).</p>
+    <div class="grid">
+      <div class="card"><h3>🎮 Main game & bikin game</h3><p>Minecraft, Unity, dan game sosial kayak Werewolf. Aku bahkan bikin bot Discord Werewolf sendiri buat main bareng teman.</p></div>
+      <div class="card"><h3>🧊 3D & Blender</h3><p>Bikin dan rigging karakter Minecraft Steve, UV mapping, sampai animasi jalan. Buatku 3D itu ngoding versi visual.</p></div>
+      <div class="card"><h3>🔧 Ngoprek hardware</h3><p>ESP32, sensor DHT22, RFID, relay, dan Wokwi. Suka lihat sensor beneran ngirim data ke HP.</p></div>
+      <div class="card"><h3>☕ Nongkrong & eksplor</h3><p>Diskusi proyek sama teman, coba tools baru, atau sekadar cari ide aplikasi dari masalah sehari-hari.</p></div>
+    </div>
+  </section>
+
+  <section id="proyek">
+    <h2>Proyek Pilihan</h2>
+    <p class="sec-desc">Yang paling aku banggakan, bukan yang paling banyak.</p>
+    <div class="grid">
+      <div class="card project">
+        <h3>🌶️ CabaiSehat</h3>
+        <p>Deteksi penyakit daun cabai dari foto + monitoring sensor IoT. MobileNetV2, Flask API, Firebase, ESP8266.</p>
+        <span class="tag">Flutter</span><span class="tag">Python</span><span class="tag">IoT</span>
+      </div>
+      <div class="card project">
+        <h3>🏨 Sistem Akses Hotel RFID</h3>
+        <p>Kartu akses fasilitas hotel pakai ESP32 + MFRC522, terhubung ke dashboard web Laravel via Firebase.</p>
+        <span class="tag">ESP32</span><span class="tag">Firebase</span><span class="tag">Laravel</span>
+      </div>
+      <div class="card project">
+        <h3>🌡️ Sistem Peringatan Suhu</h3>
+        <p>Peringatan panas ruang server: DHT22, LED, buzzer, dan kipas otomatis saat suhu &gt; 35°C.</p>
+        <span class="tag">ESP32</span><span class="tag">Wokwi</span>
+      </div>
+      <div class="card project">
+        <h3>🐺 Discord Werewolf Bot</h3>
+        <p>Bot game Werewolf dengan role custom, voting via DM, dan sistem malam yang interaktif.</p>
+        <span class="tag">Python</span><span class="tag">discord.py</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Yang Lagi Kupelajari</h2>
+    <div class="chips">
+      <span class="chip">React</span>
+      <span class="chip">Provider / Bloc</span>
+      <span class="chip">SQLite</span>
+      <span class="chip">Fine-tuning ML</span>
+      <span class="chip">UI / UX</span>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="card" style="text-align:center; padding:32px 22px;">
+      <h2>Ngobrol, yuk?</h2>
+      <p class="sec-desc" style="margin-bottom:20px;">Ada proyek, magang, atau sekadar mau tanya-tanya Flutter / IoT.</p>
+      <div class="btns" style="justify-content:center; margin-top:0;">
+        <a class="btn primary" href="https://github.com/panbotsjsj" target="_blank">GitHub</a>
+      </div>
+      <p style="margin-top:16px; color:var(--muted); font-size:14px;">Email & LinkedIn menyusul — ganti tombol di atas kalau sudah ada.</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Iqbal Keemali Alpan — Dibuat dengan HTML polos, tanpa framework.</span>
+    <span>Bondowoso, ID</span>
+  </div>
+</footer>
+
+</body>
+</html>
